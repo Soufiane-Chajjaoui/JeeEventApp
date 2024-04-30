@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:body>
+    <ui:composition template="/WEB-INF/layouts/template.xhtml">
+    <ui:define name="content">
+        <div >
+            <div class="d-flex p-4 hero position-relative align-items-center justify-content-center justify-content-md-between ">
+                <div class="col-12 mt-5 zindex-2 col-md-8 mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1 class="text-3xl mb-0 font-black text-dark">welcome to your best guide for</h1>
+                    <h1 class="text-6xl font-black text-uppercase text-dark">Discovring events.</h1>
+                    <p class="text-md ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iste.</p>
+                    <h:link value="Discover" styleClass="btn btn-primary px-10 rounded-pill" outcome="/events/index" />
+                </div>
+                <div class="bottom-gradient"></div>
+            </div>
+
+            <div class="p-4 mt-4">
+
+            <div class="container bg-white rounded-5  py-4">
+                <div class="p-4 mb-5 ">
+                    <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center ">
+                        <h1 class="font-bold text-dark text-6xl">Events And Events.</h1>
+                        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 text-white bg-dark rounded-4">
+                            <h2>Change the background</h2>
+                            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                            <button class="btn btn-outline-light" type="button">Example button</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-5  border rounded-4">
+                            <h2>Add borders</h2>
+                            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                            <button class="btn btn-outline-secondary" type="button">Example button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom">Hanging icons</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                        </div>
+                        <div>
+                            <h2>Featured title</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                        </div>
+                        <div>
+                            <h2>Featured title</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                        </div>
+                        <div>
+                            <h2>Featured title</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </ui:define>
+    </ui:composition>
+
+</h:body>
+</html>

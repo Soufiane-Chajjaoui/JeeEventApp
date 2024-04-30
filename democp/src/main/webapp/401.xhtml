@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:body>
+   <ui:composition template="/WEB-INF/layouts/template-no-top.xhtml">
+      <ui:define name="content">
+         <div class="blankslate p-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="font-bold text-5xl mb-0 text-danger">401 Unauthorized</h4>
+            <p>You don't have access to this resource!</p>
+               <h:link styleClass="btn rounded-pill btn-primary px-10" value="Back Home" outcome="/index.whtml"  />
+         </div>
+      </ui:define>
+   </ui:composition>
+</h:body>
+</html>

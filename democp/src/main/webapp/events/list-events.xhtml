@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<body>
+    <ui:component>
+        <ui:repeat value="#{eventBean.allEvents()}" var="event">
+            <div class="px-3 py-4 bg-white rounded-4 border max-w-sm-100" style="width: 420px;">
+                <h2 class="text-xl font-bold">#{event.title}</h2>
+                <p class="text-sm">#{event.description}</p>
+            </div>
+        </ui:repeat>
+    </ui:component>
+</body>
+</html>

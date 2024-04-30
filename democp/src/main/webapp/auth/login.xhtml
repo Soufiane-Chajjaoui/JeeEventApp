@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Login</title>
+</h:head>
+<h:body>
+    <ui:composition template="/WEB-INF/layouts/template-no-top.xhtml">
+    <ui:define name="content">
+        <div class="w-100 d-flex min-vh-100 justify-content-between align-items-center">
+            <!-- Left side (Login Form) -->
+            <div class="col-md-7 min-vh-50 col-12 d-flex flex-column justify-content-center ms-3 align-items-start text-center">
+                <div class="card w-50 m-3">
+                    <h:form styleClass="w-100 p-3 text-start" id="loginForm">
+                        <h1 class="font-bold mb-5 text-gray text-center">Login</h1>
+                        <div class="mb-3">
+                            <h:outputLabel for="email" value="Email"/>
+                            <h:inputText id="email" styleClass="form-control" value="#{authBean.email}" required="true"
+                                         requiredMessage="Password is required"/>
+                            <h:message for="email" showDetail="true" styleClass="error" />
+                        </div>
+
+                        <div class="mb-3">
+                            <h:outputLabel for="password" value="Password"/>
+                            <h:inputSecret id="password" value="#{authBean.password}" required="true"
+                                           requiredMessage="Password is required" styleClass="form-control" maxlength="30">
+                            </h:inputSecret>
+                            <h:message for="password" styleClass="error"/>
+                        </div>
+                        <div class="mt-4 text-center w-100">
+                            <h:commandButton value="Login" styleClass="btn btn-primary w-100" action="#{authBean.login()}" />
+                            <p class="text-sm mt-2">Not having an account? <h:link class="me-1" outcome="register" value="Sign up"/></p>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+
+            <!-- Right side (Landing Image) -->
+            <div class="p-5 align-items-center">
+                <h:graphicImage height="200px" width="220px" library="images" url="" />
+            </div>
+        </div>
+
+    </ui:define>
+    </ui:composition>
+</h:body>
+</html>
